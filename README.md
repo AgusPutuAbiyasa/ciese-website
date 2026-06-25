@@ -1,42 +1,19 @@
 # CIESE Website
 
-Static website package for **CIESE — Center for Intelligent Electronic Systems and Sustainable Energy**.
+Static English-language website for **CIESE — Center for Intelligent Electronic Systems and Sustainable Energy**.
 
-## Cara menjalankan lokal
+## Contents
+- `index.html` — full English landing page
+- `styles.css` — responsive styling
+- `script.js` — mobile navigation and publication filtering
+- `assets/` — logo and research map
+- `docs/` — institutional profile documents
 
-Buka file `index.html` langsung di browser, atau jalankan server lokal:
+## New in this version
+- Full English homepage content
+- Publication portfolio / track-record section
+- Google Scholar portfolio link
+- Updated publication pipeline section
 
-```bash
-python -m http.server 8000
-```
-
-Kemudian buka:
-
-```text
-http://localhost:8000
-```
-
-## Struktur
-
-```text
-ciese_website/
-├── index.html
-├── styles.css
-├── script.js
-├── assets/
-│   ├── ciese-logo.png
-│   └── peta-klaster.png
-└── docs/
-    └── Profil_Lembaga_CIESE_Pusat_Riset.docx
-```
-
-## Kustomisasi cepat
-
-- Ubah alamat email pada form kontak di `index.html`: `mailto:info@ciese.id`.
-- Ubah daftar publikasi pada section `#publications`.
-- Ubah status hibah pada tabel `#projects`.
-- Ganti aset logo/infografis di folder `assets`.
-
-## Catatan deployment
-
-Website ini dapat diunggah ke hosting statis seperti GitHub Pages, Netlify, Vercel, cPanel, atau subdomain kampus.
+## Deployment
+Upload all files to the root of a GitHub repository and enable GitHub Pages from `main` branch, `/root` folder.

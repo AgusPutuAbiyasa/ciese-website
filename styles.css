@@ -148,3 +148,17 @@ input:focus, textarea:focus { outline: 3px solid rgba(25, 141, 79, 0.16); border
   .metric-row, .cluster-grid, .publication-grid, .product-grid, .team-grid, .timeline, .funding-grid, .footer-grid { grid-template-columns: 1fr; }
   .section { padding: 60px 0; }
 }
+
+/* Publication track record section */
+.track-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.track-card { background: white; border: 1px solid var(--line); border-radius: 20px; padding: 24px; box-shadow: 0 12px 32px rgba(11, 47, 99, 0.07); }
+.track-card ul { margin: 12px 0 0; padding-left: 20px; color: var(--muted); }
+.track-card li { margin: 8px 0; }
+.track-label { display: inline-flex; padding: 5px 10px; border-radius: 999px; font-weight: 900; font-size: 0.78rem; margin-bottom: 10px; }
+.track-label.k1 { background: #eaf3ff; color: var(--blue); }
+.track-label.k2 { background: #e9f8f0; color: var(--green); }
+.track-label.k3 { background: #f0e9fb; color: var(--purple); }
+.track-label.k4 { background: #fff3df; color: #a85f05; }
+.portfolio-note { margin-top: 24px; background: #f7fbff; border: 1px solid var(--line); border-left: 5px solid var(--green); border-radius: 18px; padding: 20px 22px; color: var(--charcoal); }
+@media (max-width: 1080px) { .track-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 760px) { .track-grid { grid-template-columns: 1fr; } }
